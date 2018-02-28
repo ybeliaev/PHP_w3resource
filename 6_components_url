@@ -1,0 +1,23 @@
+<?php
+// Получение компонентов URL
+echo "URL is: Host " . $_SERVER['HTTP_HOST'] . " URL:  " . $_SERVER['REQUEST_URL'];
+
+// Получение компонентов из массива, полученного функцией parse_url
+//parse_url — Разбирает URL и возвращает его компоненты
+//Возможные ключи в этом массиве:
+//scheme - например, http
+//host
+//port
+//user
+//pass
+//path
+//query - после знака вопроса ?
+//fragment - после знака решётки #
+
+$url = 'https://www.w3resource.com/php-exercises/php-basic-exercises.php';
+$url = parse_url($url);
+echo 'Scheme : '.$url['scheme']."\n";
+echo 'Host : '.$url['host']."\n";
+echo 'Path : '.$url['path']."\n";
+
+?>
