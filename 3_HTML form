@@ -5,7 +5,7 @@
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    </head>
    <body>
-    <form method='POST'action="<?=$_SERVER['REQUEST_URL']?>">
+    <form method='POST'action="<?=$_SERVER['PHP_SELF']?>">
         <h2>Please input your name:</h2>
         <input type="text" name="name">
         <input type="submit" value="Submit Name">
