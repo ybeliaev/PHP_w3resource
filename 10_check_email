@@ -2,6 +2,9 @@
 //simple PHP program to check that emails are valid.
 $email = "john.doe@example.com";
 
+// Remove all illegal characters from email
+$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
 // Validate email
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo("$email is a valid email address");
