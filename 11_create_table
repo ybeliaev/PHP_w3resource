@@ -1,0 +1,33 @@
+<?php
+$arr1 = array('Mr.A', 'Mr.B','Mr.C','Mr.C');
+$arr2 = array(122, 234,3444,65);
+
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+</head>
+<body>
+<table>
+    <?php
+        foreach ($arr1 as $index => $value){
+            echo "<tr>";
+
+            echo "<td>";
+            echo "$value";
+            echo "</td>";
+
+            echo "<td>";
+            echo "$arr2[$index]";
+            echo "</td>";
+
+            echo "</tr>";
+        }
+    ?>
+</table>
+</body>
